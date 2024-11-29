@@ -258,6 +258,8 @@ a{
     margin-top: 2rem;
 }
 .section-one-r{
+    
+    
     max-width: 545px;
     margin-right: auto;
     margin-left: auto;
@@ -268,26 +270,48 @@ a{
 
 /* section two */
 .section-two{
-    padding: 64px 0;
+    padding: 64px ;
+    max-width: 750px;
+    text-align: center;
+    
+    margin-right: auto;
+    margin-left: auto;
+    
+  
+    
 }
+.section-item-title .text{
+    display: flex;
+}
+
+
 .section-two .section-items{
-    display: grid;
+    
+    
     gap: 2rem;
 }
 
-.section-two .section-item{
-    max-width: 350px;
+ .section-item{
+    
+    
+    max-width: 750px;
     text-align: center;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 0;
 }
 .section-two .section-item-icon{
-    margin: 1rem 0;
-    margin-left: 100px;
+    margin: 0 ;
+    margin-left: 1px;
+    padding-left: 0%;
+    
+}
+
+.section-one-r .section-item-tittle .text .section-item-icon{
+    display: flex;
     
 }
 .section-two .section-item-icon img{
-    width: 80px;
+    width: 60px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -317,6 +341,14 @@ a{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media screen and (min-width: 992px){
+    .section-two {
+          display: flex;
+          flex-direction: row;
+    }
+}
+
 
 @media screen and (min-width: 992px){
     .section-one-content{
@@ -564,7 +596,7 @@ textarea{
     }
 }
 
-@media screen and (min-width: 479px){
+@media screen and (min-width: 360px){
     .cv-form-row{
         padding: 3rem 3rem 0rem 3rem;
     }
@@ -572,16 +604,21 @@ textarea{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (max-width: 479px){
+@media screen and (max-width: 360px){
     .preview-image img{
-        width: 80%;
-        height: 100%;
+        width: 50%;
+        height: 50%;
         object-fit: cover;
     }
 
+    .preview-blk-title{
+        font-size: 6px;
+    
+    }
+
     .preview-image{
-        width: 120px;
-        height: 120px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         overflow: hidden;
         margin-right: auto;
@@ -590,17 +627,17 @@ textarea{
 
     .preview-item-name{
         font-size: 0.5rem;
-        font-weight: 600;
+        font-weight: 500;
         margin: 1.8rem 0;
         position: relative;
     }
    .preview-item {
-       font-size: 0.5px;
+       font-size: 2px;
     }
 
     
     .preview-item-val{
-        font-size: 0.7rem;
+        font: size 4px;;
         
     }
     
@@ -628,7 +665,7 @@ textarea{
     }
 
     .print_area{
-        width: 100%;
+        width: 80%;
         position: absolute;
         left: 0;
         top: 0;
