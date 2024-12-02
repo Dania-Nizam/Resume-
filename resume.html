@@ -8,6 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- custom css -->
         <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  </head>
     </head>
     <body>
         <nav class = "navbar bg-white">
@@ -68,7 +71,7 @@
                                         <span class="form-text"></span>
                                     </div>
                                     <div class = "form-elem">
-                                        <label for = "" class = "form-label">Address</label>
+                                        <label for = "" class = "form-label"> <i class="fa-solid fa-location-dot"></i>Address</label>
                                         <input name = "address" type = "text" class = "form-control address" id = "" onkeyup="generateCV()" placeholder="e.g. karachi Street-23" required>
                                         <span class="form-text"></span>
                                     </div>
@@ -76,12 +79,12 @@
 
                                 <div class = "cols-3">
                                     <div class = "form-elem">
-                                        <label for = "" class = "form-label">Email</label>
+                                        <label for = "" class = "form-label">  <i class="fa-solid fa-envelope"></i>Email</label>
                                         <input name = "email" type = "text" class = "form-control email" id = "" onkeyup="generateCV()" placeholder="e.g. ayesha@gmail.com" required>
                                         <span class="form-text"></span>
                                     </div>
                                     <div class = "form-elem">
-                                        <label for = "" class = "form-label">Phone No:</label>
+                                        <label for = "" class = "form-label"><i class="fa-solid fa-phone-volume"></i>  Phone No:</label>
                                         <input name = "phoneno" type = "text" class = "form-control phoneno" id = "" onkeyup="generateCV()" placeholder="e.g. 033-895409-1" required>
                                         <span class="form-text"></span>
                                     </div>
@@ -139,7 +142,7 @@
                                                     <span class="form-text"></span>
                                                 </div>
                                                 <div class = "form-elem">
-                                                    <label for = "" class = "form-label">Company / Organization</label>
+                                                    <label for = "" class = "form-label"> <i class="fa-solid fa-briefcase"></i>Company / Organization</label>
                                                     <input name = "exp_organization" type = "text" class = "form-control exp_organization" id = "" onkeyup="generateCV()">
                                                     <span class="form-text"></span>
                                                 </div>
@@ -178,7 +181,7 @@
 
                         <div class="cv-form-blk">
                             <div class = "cv-form-row-title">
-                                <h3>education</h3>
+                                <h3> <i class="fa-solid fa-graduation-cap"></i> education</h3>
                             </div>
 
                             <div class = "row-separator repeater">
@@ -187,12 +190,12 @@
                                         <div class = "cv-form-row cv-form-row-experience">
                                             <div class = "cols-3">
                                                 <div class = "form-elem">
-                                                    <label for = "" class = "form-label">School</label>
+                                                    <label for = "" class = "form-label"> <i class="fa-solid fa-school"></i>School</label>
                                                     <input name = "edu_school" type = "text" class = "form-control edu_school" id = "" onkeyup="generateCV()">
                                                     <span class="form-text"></span>
                                                 </div>
                                                 <div class = "form-elem">
-                                                    <label for = "" class = "form-label">Degree</label>
+                                                    <label for = "" class = "form-label"> <i class="fa-solid fa-graduation-cap"></i> Degree</label>
                                                     <input name = "edu_degree" type = "text" class = "form-control edu_degree" id = "" onkeyup="generateCV()">
                                                     <span class="form-text"></span>
                                                 </div>
@@ -348,14 +351,14 @@
                             <div class = "preview-blk-title">
                                 <h3>educations</h3>
                             </div>
-                            <div class = "educations-items preview-blk-list" id = "educations_dsp"></div>
+                            <div class = "educations-items-preview-blk-list" id = "educations_dsp"></div>
                         </div>
 
                         <div class = "preview-blk">
                             <div class = "preview-blk-title">
                                 <h3>experiences</h3>
                             </div>
-                            <div class = "experiences-items preview-blk-list" id = "experiences_dsp"></div>
+                            <div class = "experiences-items-preview-blk-list" id = "experiences_dsp"></div>
                         </div>
 
                         <div class = "preview-blk">

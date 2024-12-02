@@ -368,6 +368,20 @@ a{
     .section-two .section-item-icon img{
         margin-left: 0;
     }
+    .preview-image{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .preview-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
 }
 
 
@@ -576,7 +590,7 @@ textarea{
     display: block;
 }
 
-@media screen and (min-width: 767px){
+@media screen and (max-width: 767px){
     .cols-3{
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2rem;
@@ -585,7 +599,34 @@ textarea{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
+    
+    
+}@media screen and (max-width:640px){
+    .preview-blk-title{
+        font-size: 10px;
+    
+    }
+   
+
+    .preview-item-val{
+        font-size: 8px;
+    }
+    .preview-image{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .preview-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
+
+
 
 @media screen and (min-width: 992px){
     .cv-form-row{
@@ -596,7 +637,7 @@ textarea{
     }
 }
 
-@media screen and (min-width: 360px){
+@media screen and (max-width: 420px){
     .cv-form-row{
         padding: 3rem 3rem 0rem 3rem;
     }
@@ -604,12 +645,8 @@ textarea{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (max-width: 360px){
-    .preview-image img{
-        width: 50%;
-        height: 50%;
-        object-fit: cover;
-    }
+@media screen and (max-width: 420px){
+    
 
     .preview-blk-title{
         font-size: 6px;
@@ -617,12 +654,17 @@ textarea{
     }
 
     .preview-image{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         overflow: hidden;
         margin-right: auto;
         margin-left: auto;
+    }
+    .preview-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .preview-item-name{
@@ -637,8 +679,24 @@ textarea{
 
     
     .preview-item-val{
-        font: size 4px;;
+        font-size: 4px;
         
+    }
+    .skills-items {
+        font-size: 4px;
+    }
+
+    .preview-item-val{
+        font-size: 4px;
+    }
+    .preview-blk-title{
+        font-size: 4px;
+    }
+    .experiences-items-preview-blk-list{
+        font-size: 4px;
+    }
+    .preview-blk-title{
+        font-size: 4px;
     }
     
 }
@@ -665,7 +723,7 @@ textarea{
     }
 
     .print_area{
-        width: 80%;
+        width: 100%;
         position: absolute;
         left: 0;
         top: 0;
